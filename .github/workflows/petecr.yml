@@ -12,6 +12,7 @@ jobs:
   build-and-push:
     name: Build and Push Docker Image
     runs-on: ubuntu-latest
+    environment: dev
 
     env:
       AWS_REGION: us-west-2
