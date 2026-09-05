@@ -59,6 +59,12 @@
             <span th:text="#{error}">Error</span>
           </li>
 
+          <li
+            th:replace="~{::menuItem ('/contact','contact','view contact details','info-circle','Contact')}">
+            <span class="fa fa-info-circle" aria-hidden="true"></span>
+            <span>Contact</span>
+          </li>
+
         </ul>
       </div>
     </div>

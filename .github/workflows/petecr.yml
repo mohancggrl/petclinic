@@ -1,6 +1,12 @@
 name: CI/CD - Build and Push Docker Image to ECR
 
 on:
+  push:
+    branches:
+      - master
+      - mohan
+      - dev
+      - mohan_new
   workflow_dispatch:
     inputs:
       docker_tag:
